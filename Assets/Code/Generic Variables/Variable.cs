@@ -16,4 +16,24 @@ public abstract class Variable<T> : BaseVariable
     {
         Value = value.Value;
     }
+
+
+    public override bool Equals(object obj)
+    {
+        //Check for null and compare run-time types.
+        if ((obj == null) || !(this.GetType().Equals(obj.GetType()) && Value.GetType().Equals(obj.GetType())))
+        {
+            return false;
+        }
+        else
+        {
+            return Value.Equals(((Variable<T>)obj).Value);
+        }
+    }
+
+
+    public override int GetHashCode()
+    {
+        return base.GetHashCode();
+    }
 }

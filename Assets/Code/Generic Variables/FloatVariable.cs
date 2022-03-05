@@ -24,18 +24,18 @@ public class FloatVariable : Variable<float>
 {
     public override void Up()
     {
-        Value += 0.01f;
+        Value += 0.1f;
         Value = (float)Math.Round(Value, 2);
     }
 
     public override void Down()
     {
-        Value -= 0.01f;
+        Value -= 0.1f;
         Value = (float)Math.Round(Value, 2);
     }
 
     public override string ToString()
     {
-        return Value.ToString("0.00");
+        return Value.ToString("0.0");
     }
 }

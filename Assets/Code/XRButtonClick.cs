@@ -31,7 +31,7 @@ public class XRButtonClick : MonoBehaviour
         if (Mathf.Abs(value) < deadZone)
             value = 0;
 
-        Debug.Log(Vector3.Distance(_startPos, transform.position) / _joint.linearLimit.limit);
+        // Debug.Log(Vector3.Distance(_startPos, transform.position) / _joint.linearLimit.limit);
         return Mathf.Clamp(value, -1f, 1f);
     }
 
@@ -78,7 +78,7 @@ public class XRButtonClick : MonoBehaviour
         _isPressed = true;
         onClicked.Invoke();
         InvokeSpeedChange();
-        Debug.Log("Pressed");
+        // Debug.Log("Pressed");
     }
 
     private void Released()
@@ -87,6 +87,6 @@ public class XRButtonClick : MonoBehaviour
         invokeSpeed = invokeSpeedStart;
         _isPressed = false;
         onReleased.Invoke();
-        Debug.Log("Released");
+        // Debug.Log("Released");
     }
 }

@@ -24,14 +24,20 @@ public class GravityChange : MonoBehaviour
         {
             if (rigidBody.useGravity)
             {
+                // ConstantForce cf = other.gameObject.AddComponent<ConstantForce>() as ConstantForce;
+                ContinuousForce cf = other.gameObject.AddComponent<ContinuousForce>() as ContinuousForce;
                 Vector3 force = new Vector3(x.Value, y.Value, z.Value);
                 rigidBody.useGravity = false;
-                rigidBody.AddForce(force, ForceMode.Impulse);
-                rigidBody.AddForce(force);
+                cf.on = true;
+                cf.force = force;
+                // rigidBody.AddForce(force, ForceMode.Impulse);
             }
             else
             {
+                // if (other.TryGetComponent(out ContinuousForce cf))
+                //     cf.on = false;
                 rigidBody.useGravity = true;
+
             }
         }
     }

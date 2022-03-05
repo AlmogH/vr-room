@@ -18,16 +18,14 @@ public class TextReplacer : MonoBehaviour
 
     public bool AlwaysUpdate;
 
-    private void OnEnable()
-    {
-        Text.text = Variable.ToString();
-    }
-
     private void Update()
     {
         if (AlwaysUpdate)
         {
-            Text.text = Variable.ToString();
+            if (Variable)
+                Text.text = Variable.ToString();
+            else
+                Text.text = "";
         }
     }
 }

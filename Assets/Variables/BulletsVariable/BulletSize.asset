@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb402ad603629647ae5e975471a43bf, type: 3}
+  m_Name: BulletSize
+  m_EditorClassIdentifier: 
+  Value:
+    UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: 24211c661eaa5514e8c204b0c218e4f5, type: 2}
+  vars:
+  - UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: 24211c661eaa5514e8c204b0c218e4f5, type: 2}
+  - UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: a7242481c6319374a96d143378d7db52, type: 2}
+  - UseConstant: 0
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: 0a89c3638de47d64cad88d6a36f0d470, type: 2}

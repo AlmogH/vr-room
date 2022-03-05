@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7292237562394797284}
   - component: {fileID: 156512756327896269}
   - component: {fileID: 3026115174841861382}
+  - component: {fileID: 1448948969425038872}
   m_Layer: 0
   m_Name: Projectile_Dart
   m_TagString: Untagged
@@ -111,4 +112,16 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
+--- !u!75 &1448948969425038872
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9093831001618171185}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}

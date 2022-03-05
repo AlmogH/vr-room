@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 /// <summary>
 /// Reference Class.
@@ -47,5 +48,29 @@ public class Reference<T, G> : Reference where G : Variable<T>
     public static implicit operator Reference<T, G>(T Value)
     {
         return new Reference<T, G>(Value);
+    }
+
+    public override string ToString()
+    {
+        return Value.ToString();
+    }
+
+
+    public override bool Equals(object obj)
+    {
+        //Check for null and compare run-time types.
+        if ((obj == null) || !(this.GetType().Equals(obj.GetType()) || Value.GetType().Equals(obj.GetType())))
+        {
+            return false;
+        }
+        else
+        {
+            return Value.Equals(((Reference<T,G>) obj).Value);
+        }
+    }
+
+    public override int GetHashCode()
+    {
+        return base.GetHashCode();
     }
 }
