@@ -23,4 +23,5 @@ public class StringVariable : Variable<string> {
     {
         
     }
+
 }
