@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Monitor Story Space
   m_EditorClassIdentifier: 
   Value: {fileID: 11400000, guid: eaa8c51f2ce80fa4f99b20793ca3beaa, type: 2}
+  startValue: {fileID: 11400000, guid: eaa8c51f2ce80fa4f99b20793ca3beaa, type: 2}
   vars:
   - {fileID: 11400000, guid: eaa8c51f2ce80fa4f99b20793ca3beaa, type: 2}
   - {fileID: 11400000, guid: 0c8a47c354d3d1d4994b8977efc1832e, type: 2}
+  - {fileID: 11400000, guid: affa0e65f345d8642a2c2fa6ebc311cc, type: 2}

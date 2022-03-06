@@ -708,6 +708,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3194635658977956458, guid: ec6da1da86936c14d924d27de2392e4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3194635658987345520, guid: ec6da1da86936c14d924d27de2392e4a, type: 3}
       propertyPath: m_Camera
       value: 
@@ -728,6 +732,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1255591716}
+    - target: {fileID: 3194635659788225560, guid: ec6da1da86936c14d924d27de2392e4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3835500966424584096, guid: ec6da1da86936c14d924d27de2392e4a, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -1189,7 +1197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e1d8e44dcc20248b3040baad808503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityForceStart: {x: 0, y: -9.8, z: 0}
   x: {fileID: 11400000, guid: 521315f35f12d7040a00c79e581af729, type: 2}
   y: {fileID: 11400000, guid: de171e648ec72424d9c4475b40e07f70, type: 2}
   z: {fileID: 11400000, guid: d6408098c12d8194e8b390a71dfd0be2, type: 2}
