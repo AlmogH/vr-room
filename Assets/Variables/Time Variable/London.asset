@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: London
   m_EditorClassIdentifier: 
   Value: London
+  startValue: London

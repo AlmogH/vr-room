@@ -12,7 +12,6 @@ public class TerminalOptionDisplay : MonoBehaviour
     public GameObject secondText;
     public GameObject thirdText;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +21,24 @@ public class TerminalOptionDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool check = true;
+        if (vars.first != null && !vars.first.Equals(vars.firstAnswer))
+            check = false;
+        if (vars.second != null && !vars.second.Equals(vars.secondAnswer))
+            check = false;
+        if (vars.third != null && !vars.third.Equals(vars.thirdAnswer))
+            check = false;
+        if (check)
+            vars.correctEvent.Raise();
+        else
+            vars.wrongEvent.Raise();
+    }
 
+    public void Solve()
+    {
+        vars.first = vars.firstAnswer;
+        vars.second = vars.secondAnswer;
+        vars.third = vars.thirdAnswer;
     }
 
     private void UpdateVars()
@@ -57,27 +73,33 @@ public class TerminalOptionDisplay : MonoBehaviour
 
     public void FirstUp()
     {
-        vars.first.Up();
+        if (vars.first)
+            vars.first.Up();
     }
     public void SecondUp()
     {
-        vars.second.Up();
+        if (vars.second)
+            vars.second.Up();
     }
     public void ThirdUp()
     {
-        vars.third.Up();
+        if (vars.third)
+            vars.third.Up();
     }
 
     public void FirstDown()
     {
-        vars.first.Down();
+        if (vars.first)
+            vars.first.Down();
     }
     public void SecondDown()
     {
-        vars.second.Down();
+        if (vars.second)
+            vars.second.Down();
     }
     public void ThirdDown()
     {
-        vars.third.Down();
+        if (vars.third)
+            vars.third.Down();
     }
 }

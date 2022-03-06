@@ -15,15 +15,8 @@ MonoBehaviour:
   first: {fileID: 11400000, guid: 6465ff221b93bc142b51d7a04fb9f09d, type: 2}
   second: {fileID: 11400000, guid: c83e95a70b5b2ff488d2ea97f9d0cb31, type: 2}
   third: {fileID: 0}
-  firstTitle:
-    UseConstant: 1
-    ConstantValue: 
-    Variable: {fileID: 0}
-  secondTitle:
-    UseConstant: 1
-    ConstantValue: 
-    Variable: {fileID: 0}
-  thirdTitle:
-    UseConstant: 1
-    ConstantValue: 
-    Variable: {fileID: 0}
+  firstAnswer: {fileID: 11400000, guid: a8315920577dec14ab7200b570582add, type: 2}
+  secondAnswer: {fileID: 11400000, guid: a1472c49283a7a242beba4ff6924c6c7, type: 2}
+  thirdAnswer: {fileID: 0}
+  correctEvent: {fileID: 11400000, guid: 8e379729b102f4d4d9b931cd5931be98, type: 2}
+  wrongEvent: {fileID: 11400000, guid: 7a0a57a0aaa8b7145997a1f9d1fface9, type: 2}

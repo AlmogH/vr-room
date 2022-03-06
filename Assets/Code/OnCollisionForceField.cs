@@ -4,52 +4,27 @@ using UnityEngine.Events;
 
 public class OnCollisionForceField : MonoBehaviour
 {
-    [Serializable] public class CollisionEvent : UnityEvent<Collision> { }
 
-    // When the object enters a collision
-    public CollisionEvent OnEnter = new CollisionEvent();
-
-    // When the object exits a collision
-    public CollisionEvent OnExit = new CollisionEvent();
-
-    public FloatVariable x;
-    public FloatVariable y;
-    public FloatVariable z;
-
-    public IntVariable bulletSpeed;
-    public ListStringVariable bulletSize;
-    public StringVariable bulletSoultion;
-
-    private void Update()
-    {
-        if (Vector3.Distance(new Vector3(x.Value, y.Value, z.Value), Physics.gravity) < 0.1)
-        {
-            GetComponent<SphereCollider>().isTrigger = false;
-        }
-        else
-        {
-            GetComponent<SphereCollider>().isTrigger = true;
-        }
-    }
+    public bool canCollide = false;
+    public GameEvent FinishScene;
 
     private void OnCollisionEnter(Collision collision)
     {
-
-        if (bulletSpeed.Equals(27) && bulletSize.Equals(bulletSoultion))
+        if (canCollide)
         {
             Destroy(this.gameObject);
+            Invoke("Finish", 5);
         }
-        OnEnter.Invoke(collision);
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void Finish()
     {
-        OnExit.Invoke(collision);
+        FinishScene.Raise();
     }
 
-    // private void OnValidate()
-    // {
-    //     if (TryGetComponent(out Collider collider))
-    //         collider.isTrigger = false;
-    // }
+    public void SetCanCollide(bool col)
+    {
+        canCollide = col;
+    }
+
 }

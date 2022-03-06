@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: MediumBullet
   m_EditorClassIdentifier: 
   Value: Medium
+  startValue: Medium

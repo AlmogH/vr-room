@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: LargeBullet
   m_EditorClassIdentifier: 
   Value: Large
+  startValue: Large

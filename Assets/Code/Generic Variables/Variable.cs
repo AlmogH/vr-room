@@ -6,6 +6,13 @@ using UnityEngine;
 public abstract class Variable<T> : BaseVariable
 {
     public T Value;
+    public T startValue;
+
+    void OnEnable()
+    {
+        if (startValue != null)
+            Value = startValue;
+    }
 
     public void SetValue(T value)
     {

@@ -9,7 +9,10 @@ public class TerminalVariables : ScriptableObject
     public BaseVariable second;
     public BaseVariable third;
 
-    public StringReference firstTitle;
-    public StringReference secondTitle;
-    public StringReference thirdTitle;
+    public BaseVariable firstAnswer;
+    public BaseVariable secondAnswer;
+    public BaseVariable thirdAnswer;
+
+    public GameEvent correctEvent;
+    public GameEvent wrongEvent;
 }

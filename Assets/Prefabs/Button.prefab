@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2407008555108655032}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.967, y: 1.228, z: 6.201}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 6.349252, y: 6.349252, z: 6.349252}
   m_Children:
   - {fileID: 4122976387658025075}
@@ -206,21 +206,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   threshold: 0.2
   deadZone: 0.06
-  onPressed:
+  onClicked:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9172753513021108105}
-        m_TargetAssemblyTypeName: ButtonLamp, Assembly-CSharp
-        m_MethodName: SetOn
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onReleased:
     m_PersistentCalls:
       m_Calls:
@@ -236,6 +224,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onPress:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &2407008554760890700
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bad0fa16da98ca40bcba9cdc1a9528e, type: 3}
   m_Name: Second Story Chapter
   m_EditorClassIdentifier: 
-  Value: Bla Bla Check Check
+  Value: 
+  startValue: 2l3rjlk32jflkjdslkfjlsdkjflkj
