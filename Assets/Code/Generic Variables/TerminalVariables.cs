@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+/// <summary>
+/// Terminal Variables to set what the buttons effect
+/// </summary>
 [CreateAssetMenu]
 public class TerminalVariables : ScriptableObject
 {

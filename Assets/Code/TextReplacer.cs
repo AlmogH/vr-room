@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
+//Replace the text of TMPro
 public class TextReplacer : MonoBehaviour
 {
     public TextMeshProUGUI Text;

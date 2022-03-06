@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//Button Click using trigger
 public class XRButtonClickTrigger : MonoBehaviour
 {
 

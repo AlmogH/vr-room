@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+//Button click
 public class XRButtonClick : MonoBehaviour
 {
     [SerializeField] private float threshold = 0.1f;
@@ -47,7 +48,6 @@ public class XRButtonClick : MonoBehaviour
     private void Press()
     {
         onPress.Invoke();
-        Debug.Log("Pressing");
     }
 
     private void InvokeSpeedChange()
@@ -78,7 +78,6 @@ public class XRButtonClick : MonoBehaviour
         _isPressed = true;
         onClicked.Invoke();
         InvokeSpeedChange();
-        // Debug.Log("Pressed");
     }
 
     private void Released()
@@ -87,6 +86,5 @@ public class XRButtonClick : MonoBehaviour
         invokeSpeed = invokeSpeedStart;
         _isPressed = false;
         onReleased.Invoke();
-        // Debug.Log("Released");
     }
 }

@@ -8,7 +8,7 @@ public class GravityChange : MonoBehaviour
     public FloatVariable y;
     public FloatVariable z;
 
-    //Upon collision with another GameObject, this GameObject will reverse direction
+    //Change the gravity of an object
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out Rigidbody rigidBody))

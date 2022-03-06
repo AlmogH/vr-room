@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 
+
 public class TerminalOptionDisplay : MonoBehaviour
 {
     public TerminalVariables vars;
@@ -36,6 +37,7 @@ public class TerminalOptionDisplay : MonoBehaviour
 
     public void Solve()
     {
+        Debug.Log("solveeeeee");
         vars.first = vars.firstAnswer;
         vars.second = vars.secondAnswer;
         vars.third = vars.thirdAnswer;
@@ -43,6 +45,7 @@ public class TerminalOptionDisplay : MonoBehaviour
 
     private void UpdateVars()
     {
+        Debug.Log("Update terminal options");
         TextMeshProUGUI firstTMPro = firstText.GetComponent<TextMeshProUGUI>();
         TextReplacer firstTextReplacer = firstText.GetComponent<TextReplacer>();
         firstTextReplacer.Text = firstTMPro;

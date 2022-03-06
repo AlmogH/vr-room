@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Set a continuous force to mimic gravity
+/// </summary>
 public class ContinuousForce : MonoBehaviour
 {
 
     public Vector3 force;
     public bool on;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void FixedUpdate()
