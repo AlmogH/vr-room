@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5791af97cfa7924e9196715de5a4cde, type: 3}
-  m_Name: Time
+  m_Script: {fileID: 11500000, guid: 4bad0fa16da98ca40bcba9cdc1a9528e, type: 3}
+  m_Name: Tel Aviv
   m_EditorClassIdentifier: 
-  Value: 1701
-  startValue: 2020
-  max: 2500
-  min: 1600
+  Value: 
+  startValue: Tel Aviv

@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feb402ad603629647ae5e975471a43bf, type: 3}
   m_Name: Places
   m_EditorClassIdentifier: 
-  Value: {fileID: 11400000, guid: a1472c49283a7a242beba4ff6924c6c7, type: 2}
+  Value: {fileID: 11400000, guid: a0d5ea5d8df6df9469883ee94f9b5ada, type: 2}
+  startValue: {fileID: 11400000, guid: a1472c49283a7a242beba4ff6924c6c7, type: 2}
   vars:
   - {fileID: 11400000, guid: a1472c49283a7a242beba4ff6924c6c7, type: 2}
+  - {fileID: 11400000, guid: 1341d0ffbf99eb642a2f82f595fc1563, type: 2}
+  - {fileID: 11400000, guid: a0d5ea5d8df6df9469883ee94f9b5ada, type: 2}
+  - {fileID: 11400000, guid: e01fda94ffebb4646ad0d55341b5a46c, type: 2}

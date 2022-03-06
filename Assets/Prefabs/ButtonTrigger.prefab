@@ -143,8 +143,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-<<<<<<< HEAD
-=======
       - m_Target: {fileID: 7047922844372166642}
         m_TargetAssemblyTypeName: PlayQuickSound, Assembly-CSharp
         m_MethodName: Play
@@ -157,7 +155,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
->>>>>>> ec8a58436bc0113683b62033e488b79f1f4c881a
   onReleased:
     m_PersistentCalls:
       m_Calls:
@@ -176,8 +173,6 @@ MonoBehaviour:
   onPress:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<< HEAD
-=======
 --- !u!82 &-7353574848371944590
 AudioSource:
   m_ObjectHideFlags: 0
@@ -289,7 +284,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   volume: 1
   randomPitchVariance: 0
->>>>>>> ec8a58436bc0113683b62033e488b79f1f4c881a
 --- !u!1001 &4848890295611877988
 PrefabInstance:
   m_ObjectHideFlags: 0
