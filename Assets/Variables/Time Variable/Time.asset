@@ -10,6 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5791af97cfa7924e9196715de5a4cde, type: 3}
-  m_Name: BulletSpeed
+  m_Name: Time
   m_EditorClassIdentifier: 
-  Value: 30
+  Value: 2020
+  max: 2500
+  min: 1700

@@ -26,12 +26,15 @@ public class OnCollisionForceField : MonoBehaviour
         {
             GetComponent<SphereCollider>().isTrigger = false;
         }
+        else
+        {
+            GetComponent<SphereCollider>().isTrigger = true;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("speed" + bulletSpeed + bulletSpeed.Equals(27));
-        Debug.Log("size" + bulletSize + bulletSize.Equals(bulletSoultion));
+
         if (bulletSpeed.Equals(27) && bulletSize.Equals(bulletSoultion))
         {
             Destroy(this.gameObject);

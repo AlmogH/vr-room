@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb402ad603629647ae5e975471a43bf, type: 3}
+  m_Name: Monitor Story Space
+  m_EditorClassIdentifier: 
+  Value: {fileID: 11400000, guid: eaa8c51f2ce80fa4f99b20793ca3beaa, type: 2}
+  vars:
+  - {fileID: 11400000, guid: eaa8c51f2ce80fa4f99b20793ca3beaa, type: 2}
+  - {fileID: 11400000, guid: 0c8a47c354d3d1d4994b8977efc1832e, type: 2}

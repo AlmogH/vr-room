@@ -28,12 +28,12 @@ public class LaunchProjectile : MonoBehaviour
 
         if (newObject.TryGetComponent(out Rigidbody rigidBody))
         {
-            if (bulletSize.Value == bulletLarge.Value)
+            if (bulletSize.Value.Equals(bulletLarge.Value))
             {
                 newObject.transform.localScale = new Vector3(3, 3, 3);
                 rigidBody.mass = 3;
             }
-            else if (bulletSize.Value == bulletMedium.Value)
+            else if (bulletSize.Value.Equals(bulletMedium.Value))
             {
                 newObject.transform.localScale = new Vector3(2, 2, 2);
                 rigidBody.mass = 2;

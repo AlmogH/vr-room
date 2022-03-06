@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// FloatVariable Class.
+/// ListStringVariable Class.
 /// </summary>
 [CreateAssetMenu]
-public class ListStringVariable : Variable<StringReference>
+public class ListStringVariable : Variable<StringVariable>
 {
-    public List<StringReference> vars;
+    public List<StringVariable> vars;
 
     private int index;
 

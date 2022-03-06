@@ -16,6 +16,17 @@ public class TerminalOptionDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        UpdateVars();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    private void UpdateVars()
+    {
         TextMeshProUGUI firstTMPro = firstText.GetComponent<TextMeshProUGUI>();
         TextReplacer firstTextReplacer = firstText.GetComponent<TextReplacer>();
         firstTextReplacer.Text = firstTMPro;
@@ -27,19 +38,21 @@ public class TerminalOptionDisplay : MonoBehaviour
         secondTextReplacer.Text = secondTMPro;
         secondTextReplacer.AlwaysUpdate = true;
         secondTextReplacer.Variable = vars.second;
-        
+
         TextMeshProUGUI thirdTMPro = thirdText.GetComponent<TextMeshProUGUI>();
         TextReplacer thirdTextReplacer = thirdText.GetComponent<TextReplacer>();
         thirdTextReplacer.Text = thirdTMPro;
         thirdTextReplacer.AlwaysUpdate = true;
         thirdTextReplacer.Variable = vars.third;
-
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeVars(TerminalVariables newVars)
     {
-
+        if (vars != newVars)
+        {
+            vars = newVars;
+            UpdateVars();
+        }
     }
 
     public void FirstUp()

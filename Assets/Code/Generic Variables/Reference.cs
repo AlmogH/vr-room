@@ -58,15 +58,16 @@ public class Reference<T, G> : Reference where G : Variable<T>
 
     public override bool Equals(object obj)
     {
+
         //Check for null and compare run-time types.
-        if ((obj == null) || !(this.GetType().Equals(obj.GetType()) || Value.GetType().Equals(obj.GetType())))
+        if ((obj != null))
         {
-            return false;
+            if (this.GetType().Equals(obj.GetType()))
+                return Value.Equals(((Reference<T, G>)obj).Value);
+            else if (Value.GetType().Equals(obj.GetType()))
+                return Value.Equals(obj);
         }
-        else
-        {
-            return Value.Equals(((Reference<T,G>) obj).Value);
-        }
+        return false;
     }
 
     public override int GetHashCode()

@@ -22,14 +22,21 @@ public class IntReference : Reference<int, IntVariable>
 [CreateAssetMenu]
 public class IntVariable : Variable<int>
 {
+
+    [SerializeField]
+    private int max, min;
+
+
     public override void Up()
     {
-        Value += 1;
+        if (Value + 1 <= max)
+            Value += 1;
     }
 
     public override void Down()
     {
-        Value -= 1;
+        if (Value - 1 >= min)
+            Value -= 1;
     }
 
     public override string ToString()
