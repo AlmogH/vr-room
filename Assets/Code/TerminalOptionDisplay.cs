@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 
-
 public class TerminalOptionDisplay : MonoBehaviour
 {
     public TerminalVariables vars;
